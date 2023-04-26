@@ -4,7 +4,7 @@ let cors = require('cors');
 let bodyParser = require('body-parser');
 
 // Express Route
-const studentRoute = require('routes/student.route.js')
+const studentRoute = require('../backend/routes/student.route')
 
 // Connecting mongoDB Database
 /* mongoose
