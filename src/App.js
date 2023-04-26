@@ -21,14 +21,14 @@ function App() {
           <Navbar bg="primary" variant="dark">
             <Container>
               <Navbar.Brand>
-                <Link to={'https://job-platform-fxg147.herokuapp.com/create-student'} className="nav-link">
+                <Link to={'/create-student'} className="nav-link">
                   the Dream Job
                 </Link>
               </Navbar.Brand>
 
               <Nav className="justify-content-end">
                 <Nav>
-                  <Link to={'https://job-platform-fxg147.herokuapp.com/create-student'} className="nav-link">
+                  <Link to={'/create-student'} className="nav-link">
                     Post a Job
                   </Link>
                 </Nav>
@@ -50,22 +50,22 @@ function App() {
                 <Switch>
                   <Route
                     exact
-                    path="https://job-platform-fxg147.herokuapp.com/"
+                    path="/"
                     component={(props) => <CreateStudent {...props} />}
                   />
                   <Route
                     exact
-                    path="https://job-platform-fxg147.herokuapp.com/create-student"
+                    path="/create-student"
                     component={(props) => <CreateStudent {...props} />}
                   />
                   <Route
                     exact
-                    path="https://job-platform-fxg147.herokuapp.com/edit-student/:id"
+                    path="/edit-student/:id"
                     component={(props) => <EditStudent {...props} />}
                   />
                   <Route
                     exact
-                    path="https://job-platform-fxg147.herokuapp.com/student-list"
+                    path="/student-list"
                     component={(props) => <StudentList {...props} />}
                   />
                 </Switch>
