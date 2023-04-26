@@ -12,8 +12,8 @@ let studentSchema = new Schema({
     type: String
   }
 }, {
-    //collection: 'students'
-    collection: 'postings'
+    collection: 'students'
+    //collection: 'postings'
   })
 
 module.exports = mongoose.model('Student', studentSchema)
