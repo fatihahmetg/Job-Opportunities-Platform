@@ -18,7 +18,7 @@ const studentRoute = require('./routes/student.route')
 
  */
 
-const uri = "mongodb+srv://fxg147:sY5LKjFJOWfAtRC1@jobapp.xygn53x.mongodb.net/jobappdatabase?retryWrites=true&w=majority";
+const uri = "mongodb://localhost:27017/reactdb";
 mongoose
     .connect(uri)
     .then((x) => {
